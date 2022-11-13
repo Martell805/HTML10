@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="/images/logo.png">
+        <title>Регистрация</title>
+
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        <header>
+            <h1 id="main" class="font-effect-neon"><strong>Электронная библиотека</strong></h1>
+
+            <div class="hamburger-menu">
+
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+
+                <nav class="menu__box">
+                    <ul id="contents">
+                        <li><a class="menu__item" href="register.html">Регистрация</a></li>
+                        <li><a class="menu__item" href="index.html#popular">Популярные сейчас</a></li>
+                        <li><a class="menu__item" href="index.html#read">Прочитанные вами</a></li>
+                        <li><a class="menu__item" href="index.html#info">Общая информация</a></li>
+                        <li><a class="menu__item" href="index.html#history">История</a></li>
+                        <li><a class="menu__item" href="index.html#gallery">Галерея</a></li>
+                        <li><a class="menu__item" href="polygon.html">Полигон</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="note-menu">
+                <div class="bell-icon"></div>
+                <div class="note-list">
+                    <div class="note"><p>Уведомление 1</p></div>
+                    <div class="note"><p>Уведомление 2</p></div>
+                    <div class="note"><p>Уведомление 3</p></div>
+                    <div class="note"><p>Уведомление 4</p></div>
+                </div>
+            </div>
+        </header>
+
+        <form autocomplete="off" name="capcha" id="capcha" class="form_content">
+            <div class="capcha-fieldset">
+                <h2>Проверка</h2>
+
+                <p>
+                    <label id="question">Текст вопроса</label> <br>
+                </p>
+
+                <p>
+                    <label for="answer">Имя:</label> <br>
+                    <input type="text" name="answer" id="answer" required autofocus placeholder="Ответ">
+                </p>
+
+                <div class="button-row">
+                    <button name="submit-capcha" id="submit-capcha" class="button1 button2 whole-row submit-button"> Подтвердить </button>
+                </div>
+            </div>
+
+            <span class="form-square form-square1"></span>
+            <span class="form-square form-square2"></span>
+            <span class="form-square form-square3"></span>
+            <span class="form-square form-square4"></span>
+            <span class="form-square form-square5"></span>
+        </form>
+
+        <form autocomplete="on" name="registration" id="registration" class="form_content">
+            <div class="fieldset">
+                <h2 class="whole-row">Регистрация</h2>
+                <p>
+                    <label for="name">Имя:</label> <br>
+                    <input type="text" name="name" id="name" required autofocus placeholder="Отображаемое имя">
+                </p>
+
+                <p>
+                    <label for="fullname">ФИО:</label> <br>
+                    <input type="text" name="fullname" id="fullname" required autofocus placeholder="ФИО">
+                </p>
+
+                <p>
+                    <label for="email">Электронная почта:</label> <br>
+                    <input type="email" name="email" id="email" required placeholder="Электронная почта" pattern="*@*.*">
+                </p>
+                <p>
+                    <label for="password">Пароль:</label> <br>
+                    <input type="password" name="password" id="password" required placeholder="Пароль">
+                </p>
+                <div class="button-row">
+                    <button type="submit" name="submit" class="button1 button2 whole-row submit-button"> Зарегистрироваться </button>
+                </div>
+            </div>
+
+            <span class="form-square form-square1"></span>
+            <span class="form-square form-square2"></span>
+            <span class="form-square form-square3"></span>
+            <span class="form-square form-square4"></span>
+            <span class="form-square form-square5"></span>
+        </form>
+
+        <script src="scripts/register.js"></script>
+    </body>
+</html>

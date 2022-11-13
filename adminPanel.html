@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="/images/logo.png">
+    <title>Панель администратора</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+
+<!--    <script src="scripts/adminPanel.js"></script>-->
+    <script src="scripts/buttons.js"></script>
+</head>
+<body>
+
+<header>
+    <h1 id="main" class="font-effect-neon"><strong>Электронная библиотека</strong></h1>
+
+    <div class="hamburger-menu">
+
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+            <span></span>
+        </label>
+
+        <nav class="menu__box">
+            <ul id="contents">
+                <li><a class="menu__item" href="register.html">Регистрация</a></li>
+                <li><a class="menu__item" href="index.html#popular">Популярные сейчас</a></li>
+                <li><a class="menu__item" href="index.html#read">Прочитанные вами</a></li>
+                <li><a class="menu__item" href="index.html#info">Общая информация</a></li>
+                <li><a class="menu__item" href="index.html#history">История</a></li>
+                <li><a class="menu__item" href="index.html#gallery">Галерея</a></li>
+                <li><a class="menu__item" href="polygon.html">Полигон</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="note-menu">
+        <div class="bell-icon"></div>
+        <div class="note-list">
+            <div class="note"><p>Уведомление 1</p></div>
+            <div class="note"><p>Уведомление 2</p></div>
+            <div class="note"><p>Уведомление 3</p></div>
+            <div class="note"><p>Уведомление 4</p></div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section>
+        <h2>Кнопка лайка</h2>
+        <button onclick="onClickLike(this)" style="background-color: rgb(64, 64, 64);">Нравится</button>
+    </section>
+
+    <section onmousemove="onMoveGenerator(this, event)">
+        <h2>Кнопка генератор</h2>
+        <button onclick="onClickGenerator()" style="z-index: 1">Нравится</button>
+    </section>
+
+    <section>
+        <h2>Корзина</h2>
+
+        <div>
+            <label for="item">Предмет:</label>
+            <input type="text" id="item" placeholder="Желаемый предмет">
+        </div>
+        <button id="add">Добавить</button>
+        <button id="clear">Очистить</button>
+        <div>
+            <h3>Корзина:</h3>
+            <ul id="basket"></ul>
+        </div>
+
+        <script src="scripts/basket.js"></script>
+    </section>
+
+
+</main>
+
+</body>
+</html>

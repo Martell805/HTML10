@@ -1,0 +1,46 @@
+.spinner-panel {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    grid-template-areas:
+            "top  top    right"
+            "left .      right"
+            "left bottom bottom";
+
+    align-items: stretch;
+
+    width: 500px;
+    height: 500px;
+}
+
+.panel-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+
+    border-radius: 5px;
+    border: solid 3px rgb(32, 32, 32);
+
+    background-color: rgb(80, 80, 80);
+}
+
+.panel-item:hover {
+
+}
+
+.top-item {
+    grid-area: top;
+}
+
+.left-item {
+    grid-area: left;
+}
+
+.right-item {
+    grid-area: right;
+}
+
+.bottom-item {
+    grid-area: bottom;
+}
